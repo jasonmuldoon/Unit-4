@@ -12,6 +12,7 @@ body {
 
     position: relative;
     text-align: center;
+    
 
 }
 #banner {
@@ -21,6 +22,8 @@ body {
     z-index: -1;
 
 }
+
+
 
 h1 {
     font-family: Georgia, Times, "Times New Roman", serif;
@@ -34,9 +37,11 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #d2f147;
-    text-shadow: 3px 2px black;
-
+    text-shadow: 4px 2px black;
+    
+    
 }
+
 
 #relocate {
 
@@ -74,6 +79,7 @@ h2 {
 
     max-width: 400px;
     z-index: -1;
+    
 
 }
 
@@ -96,7 +102,9 @@ h2 {
     align-self: auto;
     box-shadow: 0 9px #999;
     -webkit-transition: width 2s, max-height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
-    transition: width 2s, max-height 2s, transform 2s;   
+    transition: width 2s, max-height 2s, transform 2s;
+    
+       
      
 }
 
@@ -131,6 +139,7 @@ p {
     font-family: Georgia, Times, "Times New Roman", serif;
     font-weight: bolder;
     text-align: center;
+    border-radius: 25px;
     padding: 1%;
     color: #030303;
     background-color: bisque;
@@ -139,6 +148,11 @@ p {
     margin: 0 auto;
     animation-duration: 2s;
     animation-name: slidein; 
+    transition-timing-function: ease;
+    position: relative;
+    -moz-box-shadow: 2px 4px 6px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 2px 4px 6px rgba(0, 0, 0, .5);
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, .5);
                
 }
 
