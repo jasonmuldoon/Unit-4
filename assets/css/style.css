@@ -1,3 +1,4 @@
+
 body {
 
     background: url("../images/timecrystal.jpg");
@@ -15,7 +16,7 @@ body {
 }
 #banner {
 
-    max-width: 880px;
+    max-width: 100%;
     height: 125px;
     z-index: -1;
 
@@ -33,6 +34,7 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #d2f147;
+    text-shadow: 3px 2px black;
 
 }
 
@@ -92,15 +94,23 @@ h2 {
     border-radius: 50%;
     border: none;
     align-self: auto;
- 
+    box-shadow: 0 9px #999;
+    -webkit-transition: width 2s, max-height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, max-height 2s, transform 2s;   
+     
 }
+
 
 .crystalButton:hover {
     /* Start the shake animation and make the animation last for 0.5 seconds */
     animation: shake 0.5s; 
     /* When the animation is finished, start again */
     animation-iteration-count: infinite; 
-}
+    width: 120px;
+    max-height: 120px;
+    -webkit-transform: rotate(180deg); /* For Safari 3.1 to 6.0 */
+    transform: rotate(180deg); 
+    }
 
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -127,6 +137,19 @@ p {
     background-image: radial-gradient(white,brown); 
     max-width: 770px;
     margin: 0 auto;
-
+    animation-duration: 2s;
+    animation-name: slidein; 
+               
 }
 
+@keyframes slidein {
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
