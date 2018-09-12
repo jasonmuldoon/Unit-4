@@ -51,6 +51,14 @@ function winAlert() {
     $("#wins").text("Wins: " + wins);
 
     setTimeout(function() { alert("Congratulations! You Win!"); }, 5);
+
+       // Plays win sound
+
+  var audioElement = document.createElement("audio");
+  audioElement.setAttribute("src", "assets/sound/chime.mp3");
+  audioElement.play();
+  console.log("audio win");
+
     
     setTimeout(function() {initializeGame(); }, 10);
 }
@@ -98,6 +106,7 @@ $( document ).ready(function main() {
         }else{}
 
 
+       
 
 
 
